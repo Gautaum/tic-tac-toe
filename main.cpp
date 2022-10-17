@@ -18,13 +18,13 @@ void display_board(){
 
     cout<<"PLAYER - 1 [X]\t PLAYER - 2 [O]\n\n";
     cout<<"\t\t     |     |     \n";
-    cout<<"\t\t  "<<board[0][0]<<"  |  "<<board[0][1]<<"  |  "<<board[0][2]<<" \n";
+    cout<<"\t\t  "<<board[0][0]<<"  | "<<board[0][1]<<"  |  "<<board[0][2]<<" \n";
     cout<<"\t\t_____|_____|_____\n";
     cout<<"\t\t     |     |     \n";
-    cout<<"\t\t  "<<board[1][0]<<"  |  "<<board[1][1]<<"  |  "<<board[1][2]<<" \n";
+    cout<<"\t\t  "<<board[1][0]<<"  | "<<board[1][1]<<"  |  "<<board[1][2]<<" \n";
     cout<<"\t\t_____|_____|_____\n";
     cout<<"\t\t     |     |     \n";
-    cout<<"\t\t  "<<board[2][0]<<"  |  "<<board[2][1]<<"  |  "<<board[2][2]<<" \n";
+    cout<<"\t\t  "<<board[2][0]<<"  | "<<board[2][1]<<"  |  "<<board[2][2]<<" \n";
     cout<<"\t\t     |     |     \n";
 }
 
@@ -74,7 +74,7 @@ void player_turn(){
         player_turn();
     }
     /* Ends */
-    //display_board();
+    display_board();
 }
 
 //Function to get the game status e.g. GAME WON, GAME DRAW GAME IN CONTINUE MODE
@@ -113,10 +113,10 @@ int main()
         gameover();
     }
     if(turn == 'X' && draw == false){
-        cout<<"\n\nCongratulations!Player with 'O' has won the game";
+        cout<<"\n\nCongratulations!Player with 'X' has won the game";
     }
     else if(turn == 'O' && draw == false){
-        cout<<"\n\nCongratulations!Player with 'X' has won the game";
+        cout<<"\n\nCongratulations!Player with 'O' has won the game";
     }
     else
     cout<<"\n\nGAME DRAW!!!\n\n";
