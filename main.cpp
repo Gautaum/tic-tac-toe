@@ -74,7 +74,7 @@ void player_turn(){
         player_turn();
     }
     /* Ends */
-    display_board();
+    //display_board();
 }
 
 //Function to get the game status e.g. GAME WON, GAME DRAW GAME IN CONTINUE MODE
